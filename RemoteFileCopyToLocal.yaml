@@ -1,0 +1,11 @@
+#Ansible playbook to copy code from remote to local by Abhishek
+
+---
+- hosts: all
+gather_facts: yes
+
+tasks:
+- name: ansible copy file from remote to local.
+fetch:
+src: /path/to/the/remote/file
+dest: /path/to/local
